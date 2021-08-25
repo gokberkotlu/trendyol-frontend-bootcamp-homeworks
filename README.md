@@ -2,7 +2,7 @@
 
 In this repository, there are weekly homeworks which are developed within Trendyol Front-End Bootcamp organized by Patika.dev and Trendyol.
 
-Technologies such as HTML, Css, Javascript, ReactJs, Vue.js, Jest and React-Testing-Library were used in the studies.
+Technologies such as HTML, CSS, Javascript, ReactJs, Vue.js, Jest and React-Testing-Library were used in the studies.
 
 **Week-1**
 
