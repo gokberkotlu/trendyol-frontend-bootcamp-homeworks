@@ -1,0 +1,35 @@
+/* .filter-aside
+.filter-aside-title
+.filter-aside-status-list
+.filter-aside-gender-list */
+
+
+.filter-aside {
+    width: 215px;
+    background-color: #dfd9d9;
+    position: sticky;
+    top: 75px;
+    height: calc(100vh - var(--pagination-height) - var(--search-height));
+    border-radius: 5px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    border: 1px solid black;
+}
+
+.filter-aside-title {
+    padding: 15px 11px;
+    background-color: #D3D3D3;
+}
+
+.filter-aside li {
+    padding: 10px 0;
+    border-bottom: 1px solid black;
+    background-color: #F3F3F3;
+    display: flex;
+    align-items: center;
+}
+
+.filter-aside input[type=radio] {
+    zoom: 1.8;
+    margin: 0 5px;
+}

@@ -1,0 +1,11 @@
+.search-name {
+    width: 215px;
+    height: var(--search-height);
+    line-height: var(--search-height);
+    font-size: 1.6rem;
+    background-color: #F3F3F3;
+    border-radius: 7px;
+    border: 1px solid;
+    position: sticky;
+    top: 0;
+}

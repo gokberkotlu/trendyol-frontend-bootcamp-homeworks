@@ -1,0 +1,13 @@
+/* Style back button */
+.back-button {
+    position: absolute;
+    top: 175px;
+    left: 35px;
+    color: #B2B2B2;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.back-button:HOVER {
+    color: #F3F3F3;
+}

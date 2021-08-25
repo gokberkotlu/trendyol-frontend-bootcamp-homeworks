@@ -1,0 +1,8 @@
+/* Style pending container */
+.is-pending {
+    position: absolute;
+    top: 55vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+}

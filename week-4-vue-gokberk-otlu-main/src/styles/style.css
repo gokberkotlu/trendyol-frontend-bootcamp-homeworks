@@ -1,0 +1,25 @@
+/* Common styles */
+:root {
+  --starship-card-gap: 10px;
+  --starship-card-color: #FFF;
+  --bg-color: #24282F;
+  --card-bg-color: #3C3E44;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}

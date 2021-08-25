@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --flex-gap: 35px;
+    --color-white: #FFF;
+    --bg-color-main: #312f2f;
+    --bg-color-char-card: rgb(65, 77, 77);
+    --pagination-height: 35px;
+    --search-height: 40px;
+}
+
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Quicksand";
+  box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color-main);
+}
+
+/* Character Page (Filter & Character List) */
+.character-page-container {
+    display: flex;
+}
+
+/* character listing */
+.character-list {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--flex-gap);
+    position: relative;
+}
+
+.character-preview {
+    display: flex;
+    width: calc(50% - var(--flex-gap) / 2);
+    height: 250px;
+    overflow: hidden;
+    border-radius: 15px;
+    background-color: var(--bg-color-char-card);
+    color: #FFF;
+    transition: opacity .5s;
+}
+
+.character-preview:hover {
+    opacity: 0.7;
+}
+
+@media screen and (max-width: 1000px) {
+    .character-preview {
+        width: 80%;
+        gap: 0;
+        margin: 0 auto;
+    }
+}
+
+/* character card styling */
+.character-preview .character-image {
+    width: 44%;
+    overflow: hidden;
+}
+
+.character-image img {
+    transition: transform .2s ease-in-out;
+}
+
+.character-preview:hover .character-image img {
+    transform: scale(1.1);
+}
+
+.character-preview .character-detail {
+    width: 55%;
+    align-self: center;
+    padding-left: 15px;
+}
+
+.character-detail > * {
+    margin-bottom: 10px;
+}
+
+.character-detail > *:last-child {
+    margin-bottom: 0;
+}
+
+.character-preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.character-detail-status {
+    display: flex;
+    align-items: center;
+}
+
+/* Status Icon */
+.status-icon {
+    display: inline-block;
+    height: 0.5rem;
+    width: 0.5rem;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.status-unknown {
+    background: rgb(158, 158, 158);
+}
+
+.status-alive {
+    background-color: rgb(85, 204, 68);
+}
+
+.status-dead {
+    background-color: #F00;
+}
+
+/* Character Card Subtitle Styling*/
+.char-subtitle {
+    font-size: 1rem;
+    color: rgb(158, 158, 158);
+}
+
+/* Common Styling */
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* No Result Block in Character List */
+.no-result {
+    width: 70%;
+    height: 200px;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #F3F3F3;
+    font-size: 4rem;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.no-result span {
+    display: inline-block;
+}
+
+/* Icons */
+/* Loading Icon */
+.loading {
+    color: #FFF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Go Back Button */
+.fa-arrow-alt-circle-left {
+    color: #A3A3A3;
+    position: absolute;
+    top: 5%;
+    left: 3.5%;
+    transition: color .5s;
+}
+
+.fa-arrow-alt-circle-left:hover {
+    color: #FDFDFD;
+}
+
+/* Scrollbar */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }

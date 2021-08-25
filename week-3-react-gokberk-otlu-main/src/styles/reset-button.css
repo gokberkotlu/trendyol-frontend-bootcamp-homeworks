@@ -1,0 +1,15 @@
+.reset-filter {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 1.2rem;
+    background-color: skyblue;
+    color: #000;
+    cursor: pointer;
+    border: none;
+    transition: background-color .5s, color .5s;
+}
+
+.reset-filter:hover {
+    background-color: seagreen;
+    color: #FFF;
+}
