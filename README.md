@@ -2,7 +2,7 @@
 
 In this repository, there are weekly homeworks which are developed within Trendyol Front-End Bootcamp organized by Patika.dev and Trendyol.
 
-Technologies such as HTML, CSS, Javascript, ReactJs, Vue.js, Jest and React-Testing-Library were used in the studies.
+Technologies such as HTML, CSS, Javascript, ReactJs, Vue.js, Jest and React Testing Library were used in the studies.
 
 **Week-1**
 
@@ -22,5 +22,5 @@ Tests written by using Jest for this Javascript project.
 
 <code><hr /></code>
 
-Also you can check out [Reversed Spider Solitaire React App](https://github.com/gokberkotlu/reversed-spider-solitaire). Jest, React-Testing-Library and Cypress tests are available.
+Also you can check out [Reversed Spider Solitaire React App](https://github.com/gokberkotlu/reversed-spider-solitaire). Jest, React Testing Library and Cypress tests are available.
 
